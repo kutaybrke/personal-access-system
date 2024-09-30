@@ -1,0 +1,41 @@
+.user-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 10px;
+}
+
+/* Kullanıcı bilgi stili */
+.user-info {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 20px;
+    background-color: rgba(226, 218, 214, 0.3);
+}
+
+/* Tablo stili */
+.user-info table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+/* Tablo hücre stili */
+.user-info td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Son satırın alt sınırı */
+.user-info td:last-child {
+    border-bottom: none;
+}
+
+/* Hata ve yükleme mesajı stili */
+.user-info p {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+/* hem birimler ve personeller hem dosyalar için css */
+.tree-component-button {
+    background-color: #7FA1C3;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}

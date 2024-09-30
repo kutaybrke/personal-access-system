@@ -1,0 +1,40 @@
+.erişim-durumu-container {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button-container button {
+    background-color: #7FA1C3;
+    color: #fff;
+}

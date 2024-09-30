@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Genel Stil */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    background-image: url('../image/login-arkaplan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.form-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: auto;
+    z-index: 1;
+}
+
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 9px #0000001a;
+    width: 380px;
+    padding: 40px;
+    text-align: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Buton Geçişleri */
+.button-group {
+    width: 220px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 9px #110e0e1f;
+    overflow: hidden;
+}
+
+.toggle-btn {
+    width: 50%;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #2575fc;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #111dcb, #2575fc);
+    border-radius: 30px;
+    transition: all 0.5s ease;
+
+}
+
+.toggle-btn:hover {
+    background: none;
+    color: #2575fc;
+}
+
+.toggle-btn.active {
+    color: #fff;
+}
+
+.toggle-btn:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+
+/* Form Alanları */
+.input-group {
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: #f1f1f1;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.input-field:focus {
+    background: #fff;
+    border-color: #111dcb;
+}
+
+/* İkonlar */
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #111dcb;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #111dcb;
+}
+
+/* Şifreyi Unuttum Bağlantısı */
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #111dcb;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.forgot-passwordd:hover {
+    text-decoration: underline;
+    color: #2575fc;
+}
+
+/* Gönder Butonu */
+.submit-btn {
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #111dcb, #2575fc);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #2575fc, #111dcb);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn {
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background: white;
+    border: 2px solid #111dcb;
+    border-radius: 5px;
+    color: #111dcb;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.secondary-btn:hover {
+    background: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hata Mesajları */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
